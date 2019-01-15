@@ -1,3 +1,160 @@
+@font-face {
+    font-family: 'Circular Std Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black'), url('./fonts/CircularStd-Black.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Circular Std Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Book'), url('./fonts/CircularStd-Book.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Circular Std Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Medium'), url('./fonts/CircularStd-Medium.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Circular Std Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black Italic'), url('./fonts/CircularStd-BlackItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Circular Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Bold'), url('./fonts/CircularStd-Bold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Circular Std Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Bold Italic'), url('./fonts/CircularStd-BoldItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Circular Std Book Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Book Italic'), url('./fonts/CircularStd-BookItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'Circular Std Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Medium Italic'), url('./fonts/CircularStd-MediumItalic.woff') format('woff');
+    }
+    
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 body{
+    background: #FFF;
+    font-family: 'Circular Std Medium', Arial, sans-serif; 
+    font-size: 20px; 
+    height: 100%;
+    max-height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#root{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    color: #FFF;
+}
+.border{
     background-color: black;
+    background-image: url('./landing.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+.border::after{
+    content: ' ';
+    position: absolute;
+    right: 32px;
+    top: -12px;
+    height: 32px;
+    width: 100px;
+    background-color: #FF3B47;
+}
+.border h2{
+    font-size: 42px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.border h2 span{
+    color: #FF3B47
+}
+.border > span {
+    margin-top: 24px;
+    text-align: center;
+}
+.border > span.about {
+    max-width: 480px;
+}
+.marca-start {
+    height: 38px;
+    margin-top: 24px;
+    background-image: url('./marca-preta.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.buttons{
+    margin-top: 16px;
+    justify-content: center;
+}
+a{
+    border: 2px solid #FF3B47;
+    text-decoration: none;
+    color: #FF3B47;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 8px 16px;
+    display: flex;
+    flex: 1;
+    margin: 8px 0;
+    text-align: center;
+    justify-content: center;
+}
+a.accent{
+    color: black;
+    background-color: #FF3B47;
 }
