@@ -250,7 +250,7 @@ ol.speakers{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-evenly;
     -ms-flex-align: start;
     align-items: flex-start;
 }
@@ -266,6 +266,27 @@ ol.speakers li a {
 }
 ol.speakers li a span {
     display: block;
+}
+ol.speakers li a .img-with-tag {
+    position: relative;
+}
+ol.speakers li a .img-with-tag .tag{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+ol.speakers li a .img-with-tag span{
+    background-color: #FF3B47;
+    color: #FFF;
+    padding: 4px 16px;
+    border-radius: 16px;
+    font-size: 12px;
 }
 ol.speakers li a span.job{
     color: #FF3B47!important;
@@ -306,7 +327,7 @@ ol.sponsors{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-evenly;
     -ms-flex-align: start;
     align-items: flex-start;
 }
