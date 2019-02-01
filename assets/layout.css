@@ -254,11 +254,17 @@ ol.speakers{
     -ms-flex-align: start;
     align-items: flex-start;
 }
-
+ol.speakers li a .speaker-info{
+    font-size: 12px;
+    color: #777;
+    position: absolute;
+    top: -64px;
+}
 ol.speakers li {
     width: 300px;
     margin: 0 0 32px 0;
     text-align: center;
+    position: relative;
 }
 ol.speakers li a {
     text-decoration: none;
@@ -270,7 +276,7 @@ ol.speakers li a span {
 ol.speakers li a .img-with-tag {
     position: relative;
 }
-ol.speakers li a .img-with-tag .tag{
+ol.speakers li a .tag{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -280,6 +286,16 @@ ol.speakers li a .img-with-tag .tag{
     align-items: center;
     justify-content: center;
     flex: 1;
+    flex-direction: column;
+}
+ol.speakers li a .online{
+    position: relative;
+    bottom: -3px;
+    font-size: 12px;
+    background-color: #000!important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 ol.speakers li a .img-with-tag span{
     background-color: #FF3B47;
