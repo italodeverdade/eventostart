@@ -496,4 +496,17 @@ footer a{
     ol.speakers li, ol.sponsors li{
         width: 100%!important;
     }
+    .agenda .item .body .speaker {
+        flex-direction: column;
+    }
+    .agenda .item .body .speaker img {
+        margin-bottom: 16px;
+    }
+    .agenda .item .body .speaker .infos{
+        margin-left: 0!important;
+    }
+
+    .agenda .item .body .speaker .infos > * {
+        text-align: center;
+    }
 }
