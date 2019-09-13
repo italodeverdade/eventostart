@@ -30,5 +30,5 @@ function countUpFromTime(countFrom, id) {
     idEl.getElementsByClassName('days')[0].innerHTML = Math.abs(days);
 
     clearTimeout(countUpFromTime.interval);
-    countUpFromTime.interval = setTimeout(function () { countUpFromTime(countFrom, id); }, 1000);
+    //countUpFromTime.interval = setTimeout(function () { countUpFromTime(countFrom, id); }, 1000);
 }
